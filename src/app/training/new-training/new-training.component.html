@@ -1,0 +1,26 @@
+<br/>
+<section class="new-training" fxLayout fxLayoutAlign="center" >
+  <mat-card fxFlex.gt-xs="400px" fxFlex.xs="100%">
+      <mat-card-title  fxLayoutAlign="center">
+        Time to start a Workout!!!
+      </mat-card-title>
+      <mat-card-content  fxLayoutAlign="center">
+        <mat-form-field>
+          <mat-select placeholder="Select Exercise" required>
+            <mat-option  value="crunches">
+              Crunches
+            </mat-option>
+            <mat-option  value="touch-toes">
+              Touch Toes
+            </mat-option>
+            <mat-option  value="biceps-curls">
+              Biceps Curls
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions  fxLayoutAlign="center">
+        <button mat-button type="submit" (click)="onStart()" >Start</button>
+      </mat-card-actions>
+  </mat-card>
+</section>
